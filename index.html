@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List Project</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <script src="assets/scripts/app.js" defer></script>
+    <script src="https://kit.fontawesome.com/7de8e7b2fc.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="backdrop" class="hide"></div>
+    <div class="modal card hide" id="add-list-modal">
+      <div id="modal_content">
+        <label for="title">New Item</label>
+        <input type="text" name="" id="title" maxlength="20" />
+        <div class="add-list-modal-action">
+          <button id="add-list-cancel-btn">CANCEL</button>
+          <button id="add-list-proceed-btn">SAVE</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal card hide" id="delete-confirmation-modal">
+      <div id="modal_content">
+        <p>Are you sure you want to delete item?</p>
+        <div class="delete-modal-action">
+          <button id="delete-cancel-btn">CANCEL</button>
+          <button id="delete-proceed-btn">DELETE</button>
+        </div>
+      </div>
+    </div>
+    <header>
+      <h1>to-dos</h1>
+    </header>
+    <main>
+      <img src="assets/icons/icons8-list-64.png" alt="" />
+
+      <section class="initial-text">
+        <h2>Add your first to-do</h2>
+        <p>What do you want to get done today?</p>
+      </section>
+      <ul id="list-items"></ul>
+      <button type="button" id="add-list-btn">ADD AN ITEM</button>
+    </main>
+  </body>
+</html>
